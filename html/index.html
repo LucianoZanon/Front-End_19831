@@ -1,18 +1,59 @@
-<!DOCTYPE html >
-<html lang ="pt-br">
+<!--O CSS Interno já é mais aceitável-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
 <head>
-    <meta  charset =" UTF-8 ">
-    <meta  http-equiv = " Conteúdo compatível com X-UA "=" IE=edge " >
-    <meta  name =" viewport " content =" largura= largura do dispositivo, escala inicial=1.0 " >
-    <title > Documento </title>
+    <title>Primeiros passos com css</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Luciano">
+    <meta name="description" content="Aprendendo FRONT END">
+    <meta name="keywords" content="HTML, CSS e JS">
 </head>
+<!--1º -A primeira coisa que pode ser feito é utilizar as tags do HTML.
+2º -Se eu quiser estilizar o body, cria-se a body dentro do style e após abre e fecha chaves.
+3º Se eu quiser estilizar todos os parágrafo, posso abrir a tag "p"(...que é a tag do html).
+4º Se eu quiser colocar um background só pra um parágrafo, há possíbilidades. 0
+**Estilizando somente um parágrafo utilizando o CSS inline diretamente no body mas o ideal não é faxer isso ("gambiarra").
+**É criar uma classe do CSS (Ex.: .paragrafoAmarelo). Supondo que o 2º paragrafo vai ser amarelo, cria-se dentro da tag "p" uma class com esse nome ".paragrafoAmarelo".
+**O "id"(3º parágrafo) também é uma opção. Cria um "id" dentro parágrafo (o 3º parágrafo) com o nome paragrafoTeste  -->
+
+<style>
+    body {
+        background-color: #2d4444;
+    }
+
+    p {
+        background-color: antiquewhite;
+    }
+
+    .paragrafoAmarelo {
+        background-color: yellow;
+    }
+    #paragrafoTeste {
+        background-color: blue;
+    }
+
+</style>
+
 <body>
-    
-    <p > Opa!! </p>
+    <!--O ideal é todas as tags sejam somente "HTML", sem o uso do CSS dentro dele.-->
+    <!--Após a criação do body, cria-se a tag "<style>" acima do body e começar a codificá-lo-->
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur eligendi enim repellat eum iusto officia
+        nesciunt, deserunt reiciendis fugiat deleniti et quis ad nam corporis porro molestias harum officiis vel.
+    </p>
+    <p class="paragrafoAmarelo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi saepe a eum labore velit molestiae quisquam itaque
+        nam eaque! Blanditiis, corrupti ex repellat quasi eos officia! Rerum corporis voluptatem magnam?
+    </p>
 
-    <a href =" teste.html " > Voltar </a >
+    <p id="paragrafoTeste">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dicta dolore doloremque neque
+        ab. Ducimus maiores
+        assumenda ratione molestias consectetur, accusantium doloribus nesciunt autem necessitatibus possimus alias
+        inventore officia fugiat!
+    </p>
 
-  
-    
+
 </body>
+
 </html>
+
