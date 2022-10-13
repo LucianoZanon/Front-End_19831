@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    var primeiroNumero = parseInt(prompt('Digite um número: '))
+    var segundoNumero = parseInt(prompt('Digite o segundo número: '))
+
+    function teste (operacao) {
+        
+        switch (operacao) {
+        case '+':
+            alert(' ')            
+            break;
+            case '-':
+            alert('Faço uma subtração')            
+            break;
+    
+        default:
+            break;
+    }
+    alert ('A operação é: '+ operacao)
+}
+</script>
+<body>
+    
+    
+    <input type="button" value="+" onclick="teste('+')">
+    <input type="button" value="-" onclick="teste('-')">
+
+    <div id="dvresultado">OPA</div>
+
+    
+</body>
+</html>
